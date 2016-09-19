@@ -18,9 +18,19 @@ class ViewController: UIViewController
     @IBOutlet weak var wtot: UILabel!
     @IBOutlet weak var finscore: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dissmissKeyboard() {
+        view.endEditing(true)
+    }
     
     //gradePredict function
-    @IBAction func gradePredict(sender: UIButton)
+    @IBAction func gradePredict(_ sender: UIButton)
     {
         var hwval : Int! = Int(hw.text!)
         if (hwval == nil)
@@ -100,7 +110,7 @@ class ViewController: UIViewController
         let finalscore = ((hwval * w1val) + (cwval * w2val) + (midval * w3val) + (finalval * w4val) + (oth1val * w5val) + (oth2val * w6val))
         finscore.text = "\(finalscore / 100)%"
     }//gradePredict
-    @IBAction func FinalScore(sender: UIButton)
+    @IBAction func FinalScore(_ sender: UIButton)
     {
         var hwval : Int! = Int(hw.text!)
         if (hwval == nil)

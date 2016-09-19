@@ -13,6 +13,11 @@
 		112BC8D21A80283A00B60243 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112BC8D11A80283A00B60243 /* Images.xcassets */; };
 		112BC8D51A80283A00B60243 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 112BC8D31A80283A00B60243 /* LaunchScreen.xib */; };
 		112BC8E11A80283A00B60243 /* GradePredictorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112BC8E01A80283A00B60243 /* GradePredictorTests.swift */; };
+		40E74B0B1D80F4E4005049EF /* YearOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E74B0A1D80F4E4005049EF /* YearOneViewController.swift */; };
+		40E74B0D1D80F4FE005049EF /* YearTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E74B0C1D80F4FE005049EF /* YearTwoViewController.swift */; };
+		40E74B0F1D80FBF2005049EF /* YearThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E74B0E1D80FBF2005049EF /* YearThreeViewController.swift */; };
+		40E74B111D80FBFF005049EF /* YearFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E74B101D80FBFF005049EF /* YearFourViewController.swift */; };
+		40E74B131D80FC6C005049EF /* GPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E74B121D80FC6C005049EF /* GPAViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		112BC8DA1A80283A00B60243 /* GradePredictorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradePredictorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		112BC8DF1A80283A00B60243 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112BC8E01A80283A00B60243 /* GradePredictorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradePredictorTests.swift; sourceTree = "<group>"; };
+		40E74B0A1D80F4E4005049EF /* YearOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearOneViewController.swift; sourceTree = "<group>"; };
+		40E74B0C1D80F4FE005049EF /* YearTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearTwoViewController.swift; sourceTree = "<group>"; };
+		40E74B0E1D80FBF2005049EF /* YearThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearThreeViewController.swift; sourceTree = "<group>"; };
+		40E74B101D80FBFF005049EF /* YearFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YearFourViewController.swift; sourceTree = "<group>"; };
+		40E74B121D80FC6C005049EF /* GPAViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPAViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,12 @@
 			isa = PBXGroup;
 			children = (
 				112BC8CA1A80283A00B60243 /* AppDelegate.swift */,
+				40E74B121D80FC6C005049EF /* GPAViewController.swift */,
 				112BC8CC1A80283A00B60243 /* ViewController.swift */,
+				40E74B0A1D80F4E4005049EF /* YearOneViewController.swift */,
+				40E74B0C1D80F4FE005049EF /* YearTwoViewController.swift */,
+				40E74B0E1D80FBF2005049EF /* YearThreeViewController.swift */,
+				40E74B101D80FBFF005049EF /* YearFourViewController.swift */,
 				112BC8CE1A80283A00B60243 /* Main.storyboard */,
 				112BC8D11A80283A00B60243 /* Images.xcassets */,
 				112BC8D31A80283A00B60243 /* LaunchScreen.xib */,
@@ -164,9 +179,11 @@
 					112BC8C41A80283A00B60243 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = 78F9Q4BS2K;
+						LastSwiftMigration = 0800;
 					};
 					112BC8D91A80283A00B60243 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0800;
 						TestTargetID = 112BC8C41A80283A00B60243;
 					};
 				};
@@ -215,6 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E74B131D80FC6C005049EF /* GPAViewController.swift in Sources */,
+				40E74B0D1D80F4FE005049EF /* YearTwoViewController.swift in Sources */,
+				40E74B0F1D80FBF2005049EF /* YearThreeViewController.swift in Sources */,
+				40E74B0B1D80F4E4005049EF /* YearOneViewController.swift in Sources */,
+				40E74B111D80FBFF005049EF /* YearFourViewController.swift in Sources */,
 				112BC8CD1A80283A00B60243 /* ViewController.swift in Sources */,
 				112BC8CB1A80283A00B60243 /* AppDelegate.swift in Sources */,
 			);
@@ -349,6 +371,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -364,6 +388,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = NO;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -383,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Logan-Nathanson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradePredictor.app/GradePredictor";
 			};
 			name = Debug;
@@ -399,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Logan-Nathanson.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradePredictor.app/GradePredictor";
 			};
 			name = Release;
